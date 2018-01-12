@@ -7,35 +7,14 @@ body {
   padding: 0;
 }
 
-body > section.container-fluid > section > section > nav {
+body > section:nth-child(1) > section > section > nav { /*estilos para la barra de navegación*/
   background-color: white;
   height: 13vh;
   margin: 0;
 }
 
-body > section.jumbotron > section > section > section {
-  background-color: #F7B617;
-  margin: 20% 0;
-}
-
-body > section.container-fluid > section > section > nav > div > div.navbar-header > a > img {
+body > section.container-fluid > section > section > nav > div > div.navbar-header > a > img { /*estilos para la barra de navegación*/
   margin: 15% 0;
-}
-
-body > section:nth-child(3) {
-  background-color: #F7B617;
-  padding: 3% 0;
-}
-
-body > section:nth-child(3) > section > section > section > section:nth-child(1) > img {
-  width: 50%;
-  margin: 0 auto;
-}
-
-body > section:nth-child(3) > section > section {
-  border: 1px solid white;
-  padding: 2%;
-  /* background-color: red; */
 }
 
 #navbar > ul > li > a {
@@ -44,10 +23,77 @@ body > section:nth-child(3) > section > section {
   font-weight: 400;
 }
 
-.jumbotron {
+#app-feature{
+  background-color: #F7B617;
+  padding: 3% 0;
+}
+
+#app-feature > section > section > section.col-md-6.col-sx-6 > img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#app-feature > section > section {
+  border: 1px solid white;
+  padding: 2%;
+}
+
+#hero {
   background-image: url('../assets/images/taxi.jpg');
   background-position: bottom;
   background-size: cover;
   height: 130vh;
   margin: 0;
+}
+
+#hero > section > section {
+  background-color: #F7B617;
+  margin: 20% 0;
+}
+
+#hero > section {
+  padding: 0;
+}
+
+#driver {
+  background-image: url('../assets/images/conduce.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+#driver > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: inherit;
+  padding: 8%;
+}
+
+#rates {
+  background-color: #F7B617;
+  padding: 7%;
+}
+
+.input-group {
+  margin: 3% 0%;
+}
+
+.rates-input,
+.icon-rates {
+  color: white;
+  background-color: #F7B617;
+  border: 1px solid white;
+}
+
+.icon-rates {
+  border-style: none;
+}
+
+#rates > section.col-md-4.col-sx-4 > button {
+  margin: 0 25%;
+}
+
+.map {
+  border: 1px solid white;
+  padding: 1%;
+  width: 60%;
 }
