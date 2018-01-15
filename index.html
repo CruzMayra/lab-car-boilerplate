@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <title>Reto de código: Lab-car</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -15,17 +15,16 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
     <!-- Latest compiled and minified JavaScript -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
+
   <body>
     <section class="container-fluid">
       <section class="row">
-        <section class="col-md-12 col-sx-12">
+        <section class="col-md-12 col-xs-12">
           <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
               <div class="navbar-header">
@@ -36,7 +35,7 @@
                     <span class="icon-bar"></span>
                   </button>
                 <a href="#">
-                  <img src="assets/images/logoForma.png" class="img-responsive" alt="logo">
+                  <img src="assets/images/logoForma.png" class="img-responsive logo-nav" alt="logo">
                 </a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
@@ -53,12 +52,14 @@
   </section>
 
 <!-- modal para inicio de sesión -->
-  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal fade col-md-12 col-xs-12" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" align="center">
           <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-          <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
         </div>
         <div id="div-forms">
           <form id="login-form">
@@ -85,14 +86,15 @@
       <section class="row">
         <section class="jumbotron" id="hero">
           <section class="container-fluid">
-              <section class="col-md-4 col-sx-4 pull-right">
+              <section class="col-md-5 col-xs-10 pull-right">
                 <h2>Disfruta del viaje</h2>
                 <h2>Eres dueño de tu tiempo</h2>
-                <h4>Viaja con </h4>
-                <img src="assets/images/logoBlanco.png" class="img-responsive" alt="logo-blanco">
+                <h4>Viaja con <img src="assets/images/logoBlanco.png" class="img-responsive" alt="logo-blanco"></h4>
+                <p>Comienza a viajar con <span><img src="assets/images/logoBlanco.png" class="img-responsive" alt="logo-blanco"></span></p>
                 <button class="btn btn-default" type="submit">REGÍSTRATE</button>
                 <h6>O bien</h6>
                 <button class="btn btn-default" type="submit">Conviértete en un conductor</button>
+                <a class="btn btn-default" href="#" role="button">Descarga la app</a>
               </section>
           </section>
         </section>
@@ -101,24 +103,26 @@
 
 <!-- inicia sección con características de la app -->
         <section class="row" id="app-feature">
-          <section class="col-md-10 col-sx-10">
+          <section class="col-md-10 col-xs-12">
             <section class="row">
-              <section class="col-md-6 col-sx-6">
+              <section class="col-md-6 col-xs-12">
+                <h2>La nueva app</h2>
                 <img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="app">
               </section>
-              <section class="col-md-4 col-sx-4">
+              <section class="col-md-4">
                 <h2>Descarga la nueva app</h2>
                 <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
                 <p>Con solo tocar un botón, un auto llega justo a tu ubicación.Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
               </section>
             </section>
           </section>
+          <h3>Llega a tu destino aún más rápido</h3>
         </section>
 <!-- termina sección con características de la app -->
 
 <!-- sección para el registro como conductor -->
         <section class="row"  id="driver">
-          <div class="col-md-4 col-sx-4 pull-right">
+          <div class="col-md-4 col-xs-12 pull-right">
             <h2>Conduce cuando quieras</h2>
             <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
             <button class="btn btn-default" type="submit">Conviértete en conductor</button>
@@ -128,7 +132,7 @@
 
 <!-- inicio de la sección con las tarifas -->
       <section class="row" id="rates">
-        <section class="col-md-4 col-sx-4">
+        <section class="col-md-4 col-xs-12">
           <h2>Tarifas</h2>
           <p>Consulta las tarifas LabCar aquí</p>
           <div class="input-group">
@@ -141,11 +145,11 @@
           </div>
           <button class="btn btn-default" type="submit">¡TRAZAR RUTA!</button>
         </section>
-        <section class="col-md-8 col-sx-8">
-          <div class="map pull-right">
+        <section class="col-md-5 col-xs-12 pull-right">
+          <div class="map">
             <iframe
               width="100%"
-              height="355"
+              height="360vh"
               frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGAA_78doz7kc57w3A3WHCyHCH6uvx85c&q=Space+Capital+Coworking" allowfullscreen>
             </iframe>
@@ -156,11 +160,11 @@
 
 <!-- seción del pie de página -->
       <footer class="row" id="footer">
-        <section class="col-sx-12 col-md-12">
+        <section class="col-md-12 col-xs-12">
           <img src="assets/images/logoBlanco.png" class="img-responsive" alt="logo-blanco-footer">
         </section>
         <section class="row">
-          <div class="col-md-3 col-sx-3 container-icons">
+          <div class="col-md-3 container-icons">
             <ul class="list-unstyled icons-network">
               <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
               <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -169,7 +173,7 @@
               <li><i class="fa fa-play" aria-hidden="true"></i></li>
             </ul>
           </div>
-          <div class="col-md-3 col-sx-3">
+          <div class="col-md-3 col-xs-6">
             <ul class="list-unstyled footer-options">
               <li>Viaja</li>
               <li>Conduce</li>
@@ -181,7 +185,7 @@
               <li>Seguridad</li>
             </ul>
           </div>
-          <div class="col-md-3 col-sx-3">
+          <div class="col-md-3 footer-options-mobile">
             <ul class="list-unstyled footer-options">
               <li>Oportunidades</li>
               <li>Nuestra historia</li>
@@ -193,18 +197,18 @@
               <li>Coders</li>
             </ul>
           </div>
-          <div class="col-md-3 col-sx-3 container-logo">
+          <div class="col-md-3 col-xs-6 container-logo">
             <img src="assets/images/appstore.png" alt="logo-store-apple">
             <img src="assets/images/enBadgeWebGeneric.png" alt="logo-store-google">
           </div>
         </section>
         <section class="row">
-          <div class="col-md-12 col-sx-12">
+          <div class="col-md-12 col-xs-12">
             <p>©2018 LabCar technologies Inc.</p>
           </div>
         </section>
       </footer>
 <!-- fin de la seción del pie de página -->
-
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

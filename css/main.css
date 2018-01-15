@@ -13,16 +13,13 @@ body > section:nth-child(1) > section > section > nav { /*estilos para la barra 
   margin: 0;
 }
 
-body > section.container-fluid > section > section > nav > div > div.navbar-header > a > img { /*estilos para la barra de navegación*/
-  margin: 15% 0;
-}
-
 h2 {
   font-weight: 600;
 }
 
 #navbar > ul {
   margin-top: 1%;
+  /* background-color: white; */
 }
 
 
@@ -37,9 +34,9 @@ h2 {
   padding: 3% 0;
 }
 
-#app-feature > section > section > section.col-md-6.col-sx-6 > img {
+#app-feature > section > section > section.col-md-6.col-xs-12 > img {
   width: 50%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #app-feature > section > section {
@@ -47,23 +44,33 @@ h2 {
   padding: 2%;
 }
 
-#app-feature > section > section > section.col-md-4.col-sx-4 > p {
+#app-feature > section > section > section.col-md-4 > p {
   font-size: 1.5em;
   font-weight: 300;
+}
+
+#app-feature > section > section > section.col-md-6.col-xs-12 > h2,
+#app-feature > h3 {
+  display: none;
 }
 
 #hero {
   background-image: url('../assets/images/taxi.jpg');
   background-position: bottom;
   background-size: cover;
-  height: 130vh;
+  height: 120vh;
   margin: 0;
+  padding: 0;
+}
+
+#hero > section {
+  padding: 0;
 }
 
 #hero > section > section {
   background-color: #F7B617;
-  margin-top: 20%;
-  padding: 2.5%;
+  margin-top: 16%;
+  padding: 2%;
 }
 
 #hero > section > section > h2 {
@@ -72,19 +79,19 @@ h2 {
 
 #hero > section > section > h4 {
   font-weight: 600;
-  margin-top: 9%;
+  margin-top: 7%;
   display: inline-block;
 }
 
-#hero > section > section > img {
+#hero > section > section > h4 > img {
   display: inline-block;
-  width: 20%;
+  width: 45%;
 }
 
 #hero > section > section > button {
   display: block;
   font-weight: bold;
-  margin: 7% 0;
+  margin: 5% 0;
 }
 
 #hero > section > section > h6 {
@@ -110,6 +117,14 @@ h2 {
   text-shadow: none;
   background-color: white;
   width: 35%;
+}
+
+#hero > section > section > p {
+  display: none;
+}
+
+#hero > section > section > a {
+  display: none;
 }
 
 #driver {
@@ -139,15 +154,15 @@ h2 {
 
 #rates {
   background-color: #F7B617;
-  padding: 7%;
+  padding: 5%;
 }
 
-#rates > section.col-md-4.col-sx-4 > p {
+#rates > section.col-md-4.col-xs-4 > p {
   font-size: 1.3em;
   margin: 5% 0;
 }
 
-#rates > section.col-md-4.col-sx-4 > button {
+#rates > section.col-md-4.col-xs-4 > button {
   font-weight: bolder;
   margin: 0 30%;
 }
@@ -155,6 +170,30 @@ h2 {
 #footer {
   background-color: #2B2B2B;
   padding: 6%;
+}
+
+#sizing-addon2 > i{
+  font-size: 1.4em;
+}
+
+#footer > section:nth-child(2) > div.col-md-3.col-xs-6 > img {
+  display: block;
+  margin: 10%;
+  width: 60%;
+}
+
+#footer > section.col-xs-12.col-md-12 {
+  border-bottom: 1px solid white;
+  padding: 0;
+}
+
+#footer > section:nth-child(3) > div > p {
+  border-top: 1px solid white;
+  padding-top: 2%;
+}
+
+.logo-nav { /*estilos para la barra de navegación*/
+  margin: 15% 0;
 }
 
 .input-group {
@@ -173,18 +212,14 @@ h2 {
   color: white;
 }
 
-#sizing-addon2 > i{
-  font-size: 1.4em;
-}
-
 .icon-rates {
   border-style: none;
 }
 
 .map {
   border: 1px solid white;
-  padding: 1%;
-  width: 60%;
+  padding: 2%;
+  width: 100%;
 }
 
 .container-icons {
@@ -204,21 +239,6 @@ h2 {
   margin: 7%;
 }
 
-#footer > section:nth-child(2) > div.col-md-3.col-sx-3 > img {
-  display: block;
-  margin: 10%;
-  width: 60%;
-}
-
-#footer > section.col-sx-12.col-md-12 {
-  border-bottom: 1px solid white;
-  padding: 0;
-}
-
-#footer > section:nth-child(3) > div > p {
-  border-top: 1px solid white;
-  padding-top: 2%;
-}
 
 [alt="logo-blanco-footer"] {
   margin-bottom: 2%;
@@ -226,6 +246,10 @@ h2 {
 
 .modal-content {
   background-color: #08AC9D;
+}
+
+#login-modal {
+  display: none;
 }
 
 #login-modal > div > div > div.modal-header > i {

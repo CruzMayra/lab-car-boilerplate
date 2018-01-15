@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+
+  .navbar-toggle {
+    float: left;
+    margin: 3% 1%;
+  }
+
+  .logo-nav {
+    margin: 3% 5%;
+    display: inline-block;
+  }
+
+  .h2-mobile {
+    display: block;
+  }
+
+  .map {
+    margin-top: 10%;
+  }
+
+  .footer-options-mobile {
+    display: none;
+  }
+
+  .container-icons {
+    height: auto;
+    padding-top: 10%;
+    margin-top: 1%;
+    margin-left: 52%;
+  }
+
+  .icons-network > li {
+    margin: 0 2%;
+  }
+
+  .icons-network {
+    margin: 0;
+  }
+
+  #navbar > ul > li > a {
+    color: whitesmoke;
+    font-weight: 800;
+  }
+
+  #hero {
+    height: 80vh;
+  }
+
+  #hero > section > section {
+    margin-top: 40%;
+    padding: 5%;
+  }
+
+  #hero > section > section > p {
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  #hero > section > section > p > span > img {
+    width: 30%;
+    display: inline-block;
+  }
+
+  #hero > section > section > a {
+    display: block;
+    font-weight: 800;
+    width: 50%;
+  }
+
+  #hero > section > section > h2,
+  #hero > section > section > h4,
+  #hero > section > section > button,
+  #hero > section > section > h6 {
+    display: none;
+  }
+
+  #app-feature {
+    padding: 4%;
+  }
+
+  #app-feature > section > section > section.col-md-4 {
+    display: none;
+  }
+
+  #app-feature > section > section > section.col-md-6.col-xs-12 > h2 {
+    display: block;
+    margin: 3% 20%;
+  }
+
+  #app-feature > h3 {
+    display: block;
+  }
+
+  #driver {
+    height: 60vh;
+  }
+
+  #driver > div {
+    padding: 15% 10%;
+  }
+
+  #footer > section:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) {
+    margin-top: 0;
+  }
+
+  #footer > section:nth-child(2) > div:nth-child(2) {
+    margin: 0;
+  }
+
+  #footer > section:nth-child(2) > div.col-md-3.col-xs-6.container-logo {
+    padding: 0;
+  }
+}
