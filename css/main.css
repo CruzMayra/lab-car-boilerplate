@@ -17,6 +17,10 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
   margin: 15% 0;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 #navbar > ul {
   margin-top: 1%;
 }
@@ -43,6 +47,11 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
   padding: 2%;
 }
 
+#app-feature > section > section > section.col-md-4.col-sx-4 > p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 #hero {
   background-image: url('../assets/images/taxi.jpg');
   background-position: bottom;
@@ -58,7 +67,6 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
 }
 
 #hero > section > section > h2 {
-  font-weight: 600;
   margin: 0;
 }
 
@@ -114,7 +122,19 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
 #driver > div {
   background-color: rgba(0, 0, 0, 0.5);
   height: inherit;
-  padding: 8%;
+  padding: 6% 4%;
+}
+
+#driver > div > p {
+  font-size: 1.2em;
+}
+
+#driver > div > button {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  background-color: #F7B617;
 }
 
 #rates {
@@ -122,8 +142,14 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
   padding: 7%;
 }
 
+#rates > section.col-md-4.col-sx-4 > p {
+  font-size: 1.3em;
+  margin: 5% 0;
+}
+
 #rates > section.col-md-4.col-sx-4 > button {
-  margin: 0 25%;
+  font-weight: bolder;
+  margin: 0 30%;
 }
 
 #footer {
@@ -132,7 +158,7 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
 }
 
 .input-group {
-  margin: 3% 0%;
+  margin: 10% 0%;
 }
 
 .rates-input,
@@ -140,6 +166,15 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
   color: white;
   background-color: #F7B617;
   border: 1px solid white;
+  height: 6vh;
+}
+
+.input-group ::-webkit-input-placeholder {
+  color: white;
+}
+
+#sizing-addon2 > i{
+  font-size: 1.4em;
 }
 
 .icon-rates {
@@ -187,4 +222,33 @@ body > section.container-fluid > section > section > nav > div > div.navbar-head
 
 [alt="logo-blanco-footer"] {
   margin-bottom: 2%;
+}
+
+.modal-content {
+  background-color: #08AC9D;
+}
+
+#login-modal > div > div > div.modal-header > i {
+  color: #3390FF;
+  font-size: 10em;
+}
+
+.modal-input ::-webkit-input-placeholder{
+  color: #AAABAD;
+}
+
+.modal-body {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  margin: 5% auto;
+  width: 50%;
+}
+
+#login-form > div > button {
+  margin: 0 35%;
+}
+
+#login-form > div > p {
+  color: black;
+  margin: 6% 0;
 }

@@ -1,4 +1,5 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,6 +15,10 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
     <!-- Latest compiled and minified JavaScript -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -38,14 +43,43 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Viaja</a></li>
                   <li><a href="#about">Conduce</a></li>
-                  <li><a href="#contact">Inicia sesión</a></li>
+                  <li><a href="#contact" data-toggle="modal" data-target="#login-modal">Inicia sesión</a></li>
                 </ul>
               </div>
-            </div>
+          </div>
         </nav>
-        </section>
-      </section> <!-- aquí termina la barra de navegación -->
       </section>
+    </section> <!-- aquí termina la barra de navegación -->
+  </section>
+
+<!-- modal para inicio de sesión -->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div id="div-forms">
+          <form id="login-form">
+            <div class="modal-body">
+              <div class="input-group modal-input">
+               <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+               <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+             </div>
+             <div class="input-group modal-input">
+              <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+            </div>
+            <button type="submit" class="btn btn-warning btn-modal">LOGIN</button>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin modal para inicio de sesión -->
 
 <!-- inicia sección con formulario -->
       <section class="row">
@@ -73,9 +107,9 @@
                 <img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="app">
               </section>
               <section class="col-md-4 col-sx-4">
-                <h3>Descarga la nueva app</h3>
+                <h2>Descarga la nueva app</h2>
                 <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-                <p>Con solo tocar un botón, un auto llega justo a tu ubicación</p>
+                <p>Con solo tocar un botón, un auto llega justo a tu ubicación.Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
               </section>
             </section>
           </section>
@@ -85,7 +119,7 @@
 <!-- sección para el registro como conductor -->
         <section class="row"  id="driver">
           <div class="col-md-4 col-sx-4 pull-right">
-            <h3>Conduce cuando quieras</h3>
+            <h2>Conduce cuando quieras</h2>
             <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
             <button class="btn btn-default" type="submit">Conviértete en conductor</button>
           </div>
@@ -95,7 +129,7 @@
 <!-- inicio de la sección con las tarifas -->
       <section class="row" id="rates">
         <section class="col-md-4 col-sx-4">
-          <h3>Tarifas</h3>
+          <h2>Tarifas</h2>
           <p>Consulta las tarifas LabCar aquí</p>
           <div class="input-group">
             <span class="input-group-addon icon-rates" id="sizing-addon2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
